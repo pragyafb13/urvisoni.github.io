@@ -3,13 +3,289 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
+	<style>
+		.tm-testi {
+	background-color: #FF6347;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+		-webkit-box-align: center; 
+	    -webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-flow: column;
+	    -webkit-flex-flow: column;
+	        flex-flow: column;
+	padding: 40px;
+	position: relative;
+		border: 2px solid black;
+	border-radius: 8px;
+
+}
+.tm-testi-img {
+	margin-right: 0;
+	margin-top: 30px;
+	max-width: 150px;
+	max-height: 200px; /* to fix firefox bug */
+	width: 100%;
+	height: auto;
+	border: 3px ridge #000000;
+}
+
+
+.tm-testi-text-box {
+	-ms-flex: 1 0000000
+	    -webkit-box-flex: 1;
+	    -webkit-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	width: 100%;
+
+}
+
+.tm-testi-text {
+	color: #000000;
+	font-size: 1.8rem;
+	font-weight: 300;
+	max-width: 680px;
+	margin-bottom: 2rem;
+	line-height: 1.8;
+	-ms-flex: 1 0 auto;
+	    -webkit-box-flex: 1;
+	    -webkit-flex: 1 0 auto;
+	        flex: 1 0 auto;
+}
+
+.navbar-default {
+	color: #ff4d2e;
+	text-decoration: underline;
+
+}
+
+.navbar-header:hover {
+	
+	cursor: default;
+}
+.nav-link {
+	color: #555555;
+	cursor: pointer;
+}
+body{
+	background-color: #ffa494;
+}
+	.item {
+		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		margin-bottom: 40px;
+	}
+
+		.item header {
+			background: #fff;
+			margin: 0;
+			padding: 1em 0 1em 0;
+			font-size: 0.8em;
+			align-items: center;
+		}
+
+			.item header h3 {
+				font-size: 1em;
+
+			}
+	section, article {
+		margin-bottom: 3em;
+	}
+
+		section > :last-child,
+		section > .container, section:last-child, article > :last-child,
+		article > .container, article:last-child {
+			margin-bottom: 0;
+		}
+
+		.row > section, .row > article {
+			margin-bottom: 0;
+		}
+
+/* Image */
+
+	.image {
+		display: inline-block;
+		border: 0;
+	}
+
+		.image img {
+			display: block;
+			width: 100%;
+		}
+
+		.image.avatar48 {
+			width: 50%;
+			height: 50%;
+		}
+
+			.image.avatar48 img {
+				width: 85%;
+				height: 50%
+			}
+
+		.image.fit {
+			display: block;
+			width: 100%;
+		}
+
+		.image.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+
+		.image.centered {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.centered img {
+				margin: 0 auto;
+				width: auto;
+			}
+	.row {
+		border-bottom: solid 1px transparent;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+
+	}
+
+	.row > * {
+		float: center;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.row:after, .row:before {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+
+	.row.uniform > * > :first-child {
+		margin-top: 0;
+	}
+
+	.row.uniform > * > :last-child {
+		margin-bottom: 0;
+	}
+
+	.row.\30 \25 > * {
+		padding: 0px 0 0 0px;
+	}
+
+	.row.\30 \25 {
+		margin: 0px 0 -1px 0px;
+	}
+
+	.row.uniform.\30 \25 > * {
+		padding: 0px 0 0 0px;
+	}
+
+	.row.uniform.\30 \25 {
+		margin: 0px 0 -1px 0px;
+	}
+
+	.row > * {
+		padding: 40px 0 0 40px;
+	}
+
+	.row {
+		margin: -40px 0 -1px -40px;
+	}
+
+	.row.uniform > * {
+		padding: 40px 0 0 40px;
+	}
+
+	.row.uniform {
+		margin: -40px 0 -1px -40px;
+	}
+
+	.row.\32 00\25 > * {
+		padding: 80px 0 0 80px;
+	}
+
+	.row.\32 00\25 {
+		margin: -80px 0 -1px -80px;
+	}
+
+	.row.uniform.\32 00\25 > * {
+		padding: 80px 0 0 80px;
+	}
+
+	.row.uniform.\32 00\25 {
+		margin: -80px 0 -1px -80px;
+	}
+
+	.row.\31 50\25 > * {
+		padding: 60px 0 0 60px;
+	}
+
+	.row.\31 50\25 {
+		margin: -60px 0 -1px -60px;
+	}
+
+	.row.uniform.\31 50\25 > * {
+		padding: 60px 0 0 60px;
+	}
+
+	.row.uniform.\31 50\25 {
+		margin: -60px 0 -1px -60px;
+	}
+
+	.row.\35 0\25 > * {
+		padding: 20px 0 0 20px;
+	}
+
+	.row.\35 0\25 {
+		margin: -20px 0 -1px -20px;
+	}
+
+	.row.uniform.\35 0\25 > * {
+		padding: 20px 0 0 20px;
+	}
+
+	.row.uniform.\35 0\25 {
+		margin: -20px 0 -1px -20px;
+	}
+
+	.row.\32 5\25 > * {
+		padding: 10px 0 0 10px;
+	}
+
+	.row.\32 5\25 {
+		margin: -10px 0 -1px -10px;
+	}
+
+	.row.uniform.\32 5\25 > * {
+		padding: 10px 0 0 10px;
+	}
+
+	.row.uniform.\32 5\25 {
+		margin: -10px 0 -1px -10px;
+	}
+	.\-4u {
+		margin-left: 33.33333%;
+	}
+
+	</style>
     <title>Urvi Soni | Profile & Bio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
@@ -38,7 +314,7 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: usocet636@gmail.com">usocet636@gmail.com</a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://girlswhocreate.in" target="_blank">girlswhocreate.in</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://urvisoni.tech/" target="_blank">girlswhocreate.in</a></li>
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/urvi-soni-6826b2130/" target="_blank">/in/urvi-soni</a></li>
                     <li class="github"><i class="fa fa-github"></i><a href="https://urvisoni.github.io/" target="_blank">github.com/urvisoni</a></li>
                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/UrviSoni6" target="_blank">@UrviSoni</a></li>
@@ -47,18 +323,24 @@
             <div class="education-container container-block">
                 <h2 class="container-block-title">Education</h2>
                 <div class="item">
+                    <h4 class="degree">Vishwa Vidhyalaya</h4>
+                    <h5 class="meta">Gujarat University (Science Stream) </h5>
+                    <div class="time">2013 - 2015</div>
+                </div><!--//item-->
+
+                <div class="item">
                     <h4 class="degree">BE in Computer Science</h4>
                     <h5 class="meta">Gujarat Technologycal University </h5>
-                    <div class="time">2015 - Present</div>
+                    <div class="time">2015 - 2019</div>
                 </div><!--//item-->
             </div><!--//education-container-->
             
             <div class="languages-container container-block">
                 <h2 class="container-block-title">Languages</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Hindi  <span class="lang-desc">Speak,Read,Write</span></li>
-                    <li>Gujarati <span class="lang-desc">Speak,Read,Write</span></li>
-                    <li>English <span class="lang-desc">Speak,Read,Write</span></li>
+                    <li>Hindi  <span class="lang-desc">Speak, Read, Write</span></li>
+                    <li>Gujarati <span class="lang-desc">Speak, Read, Write</span></li>
+                    <li>English <span class="lang-desc">Speak, Read, Write</span></li>
                 </ul>
             </div><!--//interests-->
             
@@ -66,10 +348,12 @@
                 <h2 class="container-block-title">Interests</h2>
                 <ul class="list-unstyled interests-list">
                     <li>MIT Media Lab</li>
-                    <li>NASA</li>
                     <li>ISRO</li>
                     <li>Codding</li>
                     <li>Travelling</li>
+                    <li>Writing</li>
+                    <li>Reading</li>
+                    <li>Listening Music</li>
                     <li>Cooking</li>
                 </ul>
             </div><!--//interests-->
@@ -81,7 +365,7 @@
             <section class="section summary-section">
                 <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                 <div class="summary">
-                    <p>I am a Full Time Student Of Gujarat Technological University. Have an Open Source Organization "Girls Who Create". Which is working on solving Rural Area Girls Problem. An Independent, Dedicated, Efficient person.Good Comunication Skill, I like to take Leadership and Working in Team. I like Travelling, Reading Books Meeting With Technical People as specially School Students Because I learn so-many things by them also inspired by them. </p>
+                    <p>I am Student Of Gujarat Technological University. Have an Open Source Organization "Girls Who Create". Which is working on solving Rural Area Girls Problem. An Independent, Dedicated, Efficient person.Good Comunication Skill, I like to take Leadership and Working in Team. I like Travelling, Reading Books Meeting With Technical People as specially School Students Because I learn so-many things by them also inspired by them. </p>
                 </div><!--//summary-->
             </section><!--//section-->
             
@@ -92,7 +376,7 @@
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">Tinker-Fest Mentor</h3>
-                            <div class="time">July(2017) - Present</div>
+                            <div class="time">July(2017) - July(2017)</div>
                         </div><!--//upper-row-->
                         <div class="company">Tech-Top , India</div>
                     </div><!--//meta-->
@@ -163,27 +447,145 @@
             
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+
                 <div class="item">
-                    <span class="project-title"><a href="http://girlswhocreate.in" target="_blank"> Girls Who Create</a></span> - <span class="project-tagline">We are making a platform as specially for Rural Area Girls to solving  their Problem. By this Platform they are learn by self learning method anywhere, anytime and Grabe their Opportunities in International Market, Finding Government Sector as well as Private Sector Job. Also, I Creating a Protal To Crack Inteview Questions and Crack Government as well as Internationl Exams.Which is so helpfull them also They can learn by self-learning method and make something new and innovative.</span>
-                    
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Girls Who Create</h3>
+                            <div class="time">Sept-2016 to Present</div>
+                        </div><!--//upper-row-->
+                        <div class="company">An Open Source Organization, India</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>We are making a platform as specially for Rural Area Girls to solving  their Problem. By this Platform they are learn by self learning method anywhere, anytime and Grabe their Opportunities in International Market, Finding Government Sector as well as Private Sector Job. Also, I Creating a Protal To Crack Inteview Questions and Crack Government as well as Internationl Exams.Which is so helpfull them also They can learn by self-learning method and make something new and innovative.</p>
+                    </div><!--//details-->
                 </div><!--//item-->
+
                 <div class="item">
-                    <span class="project-title"><a href="http://instructable.com" target="_blank">Arduino Based Projects</a></span> - 
-                    <span class="project-tagline">I learn Some Basics Of arduino and working on it to make a Differant Project's which is helpfull to build our Future Of Nation. I learned codding of arduino, Circuit Connections and Making Some Basic Little Projects By using Arduino, Ulrasonic Sensors, LEDs, LCDs, Servo Motor, PIR Motion Sensor, Pressure Sensor, Bluetooth, Wi-Fi Module etc. My learning on Arduino, Different Sensors is working on process.</span>
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Intern</h3>
+                            <div class="time">March-2017 to Oct-2017</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Lab55, Ahmedabad, Gujarat, India</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Lab55 is an Open Source Organization. I was Intern with this Organization where I made Websites, Learned Business Planning, Basics of Lasser Cutting, Modeling, Development etc.</p>
+                        <p>Website Link:-</p>
+                        <ul>
+                        	<li>
+                        		<a href="http://lab55.in/">Lab55</a>
+                        	</li>
+                        </ul>
+                    </div><!--//details-->
                 </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Web-Development Internship</h3>
+                            <div class="time">Jan-2018 to Jan-2018</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Sociowander, Virtual Internship, India</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>I was selected in Sociowander through LetsIntern Platform. Socio Wander is a Start-Up. They provide another Start-up a helping hand with their website, Where I am a Head of the Web-Developer Team also, I made different Website Modules according to clients requirements. It's a Nice Experience to working with Start-Up where I learn new things like How to work with Team, How to communicate etc.</p>
+                        <p>Website Link:-</p>
+                        <ul>
+                        	<li>
+                        		<a href="http://phantomlyyours.com/">Phantomly Yours</a>
+                        	</li>
+                        </ul>                    
+                    </div><!--//details-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Python Internship</h3>
+                            <div class="time">Jan-2018 to Jan-2018</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Way To Web Pvt. Lmt., Ahmedabad, Gujarat, India</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Way To Web is an IT Company in Ahmedabad, Gujarat which Provides Website Development, Training, Internship etc. From there I did my Internship in Python & Django. It was 6 Days Internship but I learn so many new things, growing my knowledge, share my experiences. They Providing Good Mentoring.</p>
+                        <p>Company Website Link:-</p>
+                        <ul>
+                        	<li>
+                        		<a href="http://waytowebgroup.com/">Way To Web</a>
+                        	</li>
+                        </ul>                    
+                    </div><!--//details-->
+                </div><!--//item-->
+
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Arcobotics</h3>
+                            <div class="time">Jan-2018 to Jan-2018</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Arcobotics Edu. Tech, Ahmedabad, Gujarat, India</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Arcobotics Edu. Tech. is a small company in Ahmedabad. In January 2018, I and my friend made Teo Websites named as "Encube Labs" and "SAV-ATL". It was great Experience working with my friend, I learned so many things during developing this two websites.</p>
+                        <p>Websites Links:-</p>
+                        <ul>
+                        	<li><a href="http://encube.co/">Encube Labs</a>
+							</li>
+                        	<li><a href="https://savatl.github.io/">SAV-ATL (Sheth Amulakh School, Atal Tinkering Labs)</a> 
+							</li>
+						 </ul>
+
+                    </div><!--//details-->
+                </div><!--//item-->
+
                 <section class="skills-section section">
                 <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
                 <div class="skillset">        
                     <div class="item">
-                        <h3 class="level-title">Python</h3>
+                        <h3 class="level-title">Python, Flask & MySQL</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
+                            <div class="level-bar-inner" data-level="70%">
                             </div>                                      
                         </div><!--//level-bar-->                                 
                     </div><!--//item-->
                     
                     <div class="item">
-                        <h3 class="level-title">Github</h3>
+                        <h3 class="level-title">Git & Github</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="65%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">C</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="70%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="95%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Wordpress</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="90%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    
+                    <div class="item">
+                        <h3 class="level-title">Blogging</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="60%">
                             </div>                                      
@@ -199,14 +601,6 @@
                     </div><!--//item-->
                     
                     <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
                         <h3 class="level-title">3-D Printing Design</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="50%">
@@ -215,7 +609,7 @@
                     </div><!--//item-->
                     
                     <div class="item">
-                        <h3 class="level-title">Wordpress</h3>
+                        <h3 class="level-title">Cooking</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="90%">
                             </div>                                      
