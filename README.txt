@@ -1,28 +1,6 @@
-Free Bootstrap Resume/CV Template for developers
+Thanks for downloading this theme!
 
-Theme name:
-=======================================================================
-Orbit
-
-Theme version:
-=======================================================================
-v1.0
-
-Release Date:
-=======================================================================
-29 Jan 2016
-
-Author: 
-=======================================================================
-Xiaoying Riley at 3rd Wave Media (http://themes.3rdwavemedia.com/)
-
-Contact:
-=======================================================================
-Web: http://themes.3rdwavemedia.com/
-Email: hello@3rdwavemedia.com
-Twitter: @3rdwave_themes
-
-License: 
-=======================================================================
-This template is free under the Creative Commons Attribution 3.0 License.
-https://creativecommons.org/licenses/by/3.0/
+Theme Name: Folio
+Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+Author: BootstrapMade.com
+Author URL: https://bootstrapmade.com
