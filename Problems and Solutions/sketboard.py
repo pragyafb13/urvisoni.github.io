@@ -92,7 +92,7 @@ def callOn(i, j):
 			callOn( i, j+1)
 	pass
 matrix= []
-findF = True;
+findF = True
 finalPosition = []
 n = int(input())
 for x in range(n):
